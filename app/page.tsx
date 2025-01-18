@@ -1,4 +1,5 @@
 "use client"
+import { P } from "@hop/hop"
 import { useState } from "react"
 
 
@@ -21,6 +22,7 @@ export default function Home(){
         setColor("red")
       }
       }}>ClickMe</button>
+      {color=="red"?<p>Button is clicked</p>:<p></p>}
     </div>
     </>
   )
