@@ -21,7 +21,7 @@ export default function Home(){
         setColor("red")
       }
       }}>ClickMe</button>
-      {color=="red"?<p>Button is clicked</p>:<p></p>}
+      {color=="blue"?<p>Button is clicked</p>:<p></p>}
     </div>
     </>
   )
