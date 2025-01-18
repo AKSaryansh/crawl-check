@@ -13,7 +13,14 @@ export default function Home(){
     <h4>But your mum got my winni inside her</h4>
     <h5>Fuck off!!</h5>
     <h6>OKAY, WITH YOUR MUM</h6>
-    <button style={{backgroundColor:color}} onClick={()=>{setColor("blue")}}>ClickMe</button>
+    <button style={{backgroundColor:color}} onClick={()=>{
+      if (color == "red"){
+        setColor("blue")
+      }
+      else{
+        setColor("red")
+      }
+      }}>ClickMe</button>
     </div>
     </>
   )
