@@ -22,6 +22,8 @@ export default function Home(){
       }
       }}>ClickMe</button>
       {color=="blue"?<p>Button is clicked</p>:<p></p>}
+      <a href="#">link1</a>
+      <a href="#">link2</a>
     </div>
     </>
   )
