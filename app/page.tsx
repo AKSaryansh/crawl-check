@@ -1,4 +1,9 @@
+"use client"
+import { useState } from "react"
+
+
 export default function Home(){
+  const [color, setColor] = useState("red")
   return (
     <>
     <div className="item">
@@ -8,7 +13,7 @@ export default function Home(){
     <h4>But your mum got my winni inside her</h4>
     <h5>Fuck off!!</h5>
     <h6>OKAY, WITH YOUR MUM</h6>
-    <button>ClickMe</button>
+    <button style={{backgroundColor:color}} onClick={()=>{setColor("blue")}}>ClickMe</button>
     </div>
     </>
   )
