@@ -8,6 +8,7 @@ export default function Home(){
     <>
     <div className="item">
     <h1>This is a new website</h1>
+    <h1>Yes yes, this is a new website</h1>
     <h2>Hi what are you doing</h2>
     <h3>Nothing just chillin with your mum</h3>
     <h4>But your mum got my winni inside her</h4>
