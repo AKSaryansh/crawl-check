@@ -4,6 +4,14 @@ import { useState } from "react"
 
 export default function Home(){
   const [color, setColor] = useState("red")
+  const [name,setName] = useState("")
+  const handleonSubmit = ()=>{
+    alert("submitted succesfully");
+    setName("")
+  }
+  const handleonChange = (event)=>{
+    setName(event.target.value)
+  }
   return (
     <>
     <div className="item">
@@ -25,6 +33,11 @@ export default function Home(){
       {color=="blue"?<p>Button is clicked</p>:<p></p>}
       <a href="#">link1</a>
       <a href="#">link2</a>
+      <h1>Form Submission</h1>
+      <form onSubmit={handleonSubmit}>
+        <input type="text" placeholder="Enter yout name" value={name} onChange={(event)=>{handleonChange(event)}}/>
+        <button>Submit</button>
+      </form>
     </div>
     </>
   )
