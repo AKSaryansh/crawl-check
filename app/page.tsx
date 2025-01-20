@@ -8,8 +8,17 @@ export default function Home() {
   // Type for the form submission handler
   const handleonSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent default form submission behavior
-    alert("Submitted successfully");
-    setName("");
+  
+    // Display alert for 4 seconds using a promise
+    new Promise<void>((resolve) => {
+      alert("Submitted successfully");
+      setTimeout(() => {
+        resolve();
+      }, 4000); // 4 seconds delay
+    }).then(() => {
+      // Clear the input field after the alert closes
+      setName("");
+    });
   };
 
   // Type for the input change handler
