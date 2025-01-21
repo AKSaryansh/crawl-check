@@ -3,7 +3,7 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 
 export default function Home() {
-  // const [color, setColor] = useState<string>("red");
+  const [color, setColor] = useState<string>("red");
   const [name, setName] = useState<string>("");
   const [disp,setDisp] = useState<boolean>(false);
   // Type for the form submission handler
