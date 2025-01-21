@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <div className="item">
-        {/* <h1>This is a new website</h1>
+        <h1>This is a new website</h1>
         <h1>Yes yes, this is a new website</h1>
         <h2>Hi what are you doing</h2>
         <h3>Nothing just chillin with your mum</h3>
@@ -47,10 +47,10 @@ export default function Home() {
           }}
         >
           Click Me
-        </button> */}
-        {/* {color === "blue" ? <p>Button is clicked</p> : null}
+        </button>
+         {color === "blue" ? <p>Button is clicked</p> : null}
         <a href="#">link1</a>
-        <a href="#">link2</a> */}
+        <a href="#">link2</a>
         <h1>Form Submission</h1>
         <form onSubmit={handleonSubmit}>
           <input
