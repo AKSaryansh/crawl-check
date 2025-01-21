@@ -1,4 +1,5 @@
 "use client";
+import { P } from "@hop/hop";
 import { useState, FormEvent, ChangeEvent } from "react";
 
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
           />
           <button type="submit">Submit</button>
         </form>
-        {disp?<h1>Something is cooking</h1>:<h1></h1>}
+        {disp?<h2>Something is cooking</h2>:<p></p>}
       </div>
     </>
   );
