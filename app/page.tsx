@@ -20,7 +20,7 @@ export default function Home() {
     //   // Clear the input field after the alert closes
     //   setName("");
     // });
-    setTimeout(()=>{setDisp(false)},2000)
+    // setTimeout(()=>{setDisp(false)},2000)
     setDisp(true);
     setName("");
   };
